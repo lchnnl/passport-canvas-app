@@ -1,5 +1,5 @@
 {
-  "name": "passport-canvas-app",
+  "name": "@broadly/passport-canvas-app",
   "version": "1.0.0",
   "description": "Passport.js authentication strategy for Salesforce Canvas App (POST signed requests)",
   "main": "index.js",
