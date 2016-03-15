@@ -35,5 +35,13 @@
     "nock": "^7.2.2",
     "passport": "^0.3.2",
     "request": "^2.69.0"
-  }
+  },
+  "keywords": [
+    "passport",
+    "salesforce",
+    "salesforce.com",
+    "force.com",
+    "authentication",
+    "identity"
+  ]
 }
