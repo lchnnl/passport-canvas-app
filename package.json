@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/broadly/passport-canvas-app.git"
   },
-  "author": "Assaf Arkin <assaf@labnotes.org> (https://labnotes.org/)",
+  "author": "Assaf Arkin <assaf@broadly.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/broadly/passport-canvas-app/issues"
