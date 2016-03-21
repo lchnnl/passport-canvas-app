@@ -129,7 +129,7 @@ function loadUserProfile(data) {
   };
 
   return new Promise(function(resolve, reject) {
-    request({ url, query, json: true }, function(error, response) {
+    request({ url, qs: query, json: true }, function(error, response) {
       if (error)
         reject(error);
       else {
