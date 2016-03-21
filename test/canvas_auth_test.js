@@ -44,8 +44,12 @@ function canvasData() {
 
 /* eslint-disable camelcase */
 const idUrl = `/id/${ORGANIZATION_ID}/${USER_ID}`;
-nock('https://login.salesforce.com')
-  .get(idUrl)
+const login = nock('https://login.salesforce.com');
+
+// No/wrong OAuth token
+login.get(idUrl).reply(403);
+
+login.get(idUrl)
   .query({
     format:      'json',
     oauth_token: OAUTH_TOKEN
