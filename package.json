@@ -1,6 +1,6 @@
 {
-  "name": "@broadly/passport-canvas-app",
-  "version": "1.0.2",
+  "name": "lchnnl/passport-canvas-app",
+  "version": "1.0.0",
   "description": "Passport.js authentication strategy for Salesforce Canvas App (POST signed requests)",
   "main": "index.js",
   "scripts": {
@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/broadly/passport-canvas-app.git"
+    "url": "git+https://github.com/lchnnl/passport-canvas-app.git"
   },
-  "author": "Assaf Arkin <assaf@broadly.com>",
+  "author": "Loeng Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/broadly/passport-canvas-app/issues"
+    "url": "https://github.com/lchnnl/passport-canvas-app/issues"
   },
-  "homepage": "https://github.com/broadly/passport-canvas-app#readme",
+  "homepage": "https://github.com/lchnnl/passport-canvas-app#readme",
   "dependencies": {
     "passport-strategy": "^1.0.0"
   },
@@ -42,6 +42,7 @@
     "salesforce.com",
     "force.com",
     "authentication",
-    "identity"
+    "identity",
+    "canvas"
   ]
 }
