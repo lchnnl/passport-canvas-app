@@ -120,8 +120,10 @@ function signatureFor(encoded, secret) {
 // REST API.
 function loadUserProfile(data) {
   const userId         = data.context.user.userId;
+  const userUrl        = data.context.links.userUrl;
   const organizationId = data.context.organization.organizationId;
-  const url            = `https://login.salesforce.com/id/${organizationId}/${userId}`;
+  const instanceUrl    = data.client.instanceUrl;
+  const url            = `${instanceUrl}/id/${organizationId}${userUrl}`;
   const accessToken    = data.client.oauthToken;
   const query          = {
     format:      'json',

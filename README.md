@@ -6,7 +6,7 @@
 In order to use this Strategy, you'll need a Connected App with `Force.com Canvas` enabled, `Canvas App URL` that points to the authenticate endpoint, and `Access Method` set to `Signed Request (POST)`.
 
 ```bash
-npm install --save @broadly/passport-canvas-app
+npm install --save @lchnnl/passport-canvas-app
 ```
 
 
