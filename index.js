@@ -33,7 +33,7 @@ module.exports = class CanvasAppStrategy extends Passport.Strategy {
 
       })
       .catch(error => {
-        this.fail(403, error.message);
+        this.fail(error.message, 403);
       });
     return null;
   }
@@ -135,8 +135,12 @@ function loadUserProfile(data) {
       if (error)
         reject(error);
       else {
-        assert.equal(response.statusCode, 200);
-        resolve(response.body);
+        try {
+          assert.equal(response.statusCode, 200);
+          resolve(response.body);
+        } catch (error) {
+          reject(error);
+        }
       }
     });
   });
