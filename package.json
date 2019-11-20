@@ -1,6 +1,6 @@
 {
   "name": "@lchnnl/passport-canvas-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Passport.js authentication strategy for Salesforce Canvas App (POST signed requests)",
   "main": "index.js",
   "scripts": {
