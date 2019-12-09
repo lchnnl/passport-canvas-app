@@ -74,6 +74,7 @@ module.exports = class CanvasAppStrategy extends Passport.Strategy {
         const body = data.context.environment;
         // access token is added to user object so that it can be re-used for consecutive calls
         user.access_token = data.client.oauthToken;
+        user.signed_request = data.context.environment;
         return { user, body };
       });
   }
