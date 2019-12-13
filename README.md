@@ -1,5 +1,11 @@
 ## Passport.js authentication strategy for Salesforce Canvas App (POST signed requests)
 
+### Changelog
+- v1.0.4 Added the Signed Request to the user body. This is useful when user object is stored in session, and you want to access the canvas parameters in a *consecutive* call. The signed request can be accessed through:
+`{ req.user.signed_request }`
+- v1.0.3 Added the access token to the user object. This is useful when the canvas app has to make an consecutive call to Salesforce to fetch additional data. Access token can then be used for authentication. Access token can be accessed through:
+`{ req.user.access_token }`
+- v1.0.2 Bug fix: In case Salesforce session has expired, and you perform a 'post' method with an old signed request body, the strategy will crash. 
 
 ### Setup
 
